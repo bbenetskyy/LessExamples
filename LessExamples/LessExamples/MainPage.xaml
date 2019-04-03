@@ -70,7 +70,7 @@
             </StackLayout>
         </Frame>
 
-        <ListView SelectionMode="None" HasUnevenRows="True" SeparatorColor="Transparent"
+        <!--<ListView SelectionMode="None" HasUnevenRows="True" SeparatorColor="Transparent"
             ItemsSource="{Binding Source={x:Static fakeProvider:FakeDataProvider.FakeBadges}}">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -81,7 +81,7 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
         
     </StackLayout>
 </ContentPage>
