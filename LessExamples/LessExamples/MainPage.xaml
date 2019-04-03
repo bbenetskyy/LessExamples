@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LessExamples"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             x:Class="LessExamples.MainPage">
+        <ContentPage.Resources>
+            <StyleSheet Source="Styles/MainPage.css"/>
+        <!--<Color x:Key="splitterColor">Black</Color>
+                <Color x:Key="borderColor">#7A9999</Color>
+                <Color x:Key="primaryBackgroudColor">#516969</Color>
+                <Color x:Key="titleColor">#B9CDCD</Color>
+                <Color x:Key="detailsColor">#E4F4F4</Color>
+
+
+                <Style TargetType="Frame">
+                        <Setter Property="Margin" Value="15,50,15,0"/>
+                        <Setter Property="CornerRadius" Value="15"/>
+                        <Setter Property="BorderColor" Value="{StaticResource borderColor}"/>
+                        <Setter Property="BackgroundColor" Value="{StaticResource primaryBackgroudColor}"/>
+                        <Setter Property="HorizontalOptions" Value="Center"/>
+                        <Setter Property="HasShadow" Value="True"/>
+                        <Setter Property="WidthRequest" Value="200"/>
+                </Style>
+                <Style x:Key="parentStack" TargetType="StackLayout">
+                        <Setter Property="Spacing" Value="10"/>
+                </Style>
+                <Style x:Key="inFrameStack" TargetType="StackLayout">
+                        <Setter Property="Orientation" Value="Vertical"/>
+                </Style>
+                <Style x:Key="splitterBox" TargetType="BoxView">
+                        <Setter Property="HeightRequest" Value="1"/>
+                        <Setter Property="BackgroundColor" Value="{StaticResource splitterColor}"/>
+                        <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                </Style>
+                <Style x:Key="titleLabel" TargetType="Label">
+                        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                        <Setter Property="FontSize" Value="Large"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                        <Setter Property="TextColor" Value="{StaticResource titleColor}"/>
+                </Style>
+                <Style x:Key="detailsLabel" TargetType="Label">
+                        <Setter Property="LineBreakMode" Value="NoWrap"/>
+                        <Setter Property="MaxLines" Value="3"/>
+                        <Setter Property="FontAttributes" Value="Italic"/>
+                        <Setter Property="TextColor" Value="{StaticResource detailsColor}"/>
+                        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                </Style>-->
+        </ContentPage.Resources>
+    <StackLayout>
+        <Frame HorizontalOptions="Center"
+               HasShadow="True">
+            <StackLayout>
+                <ffimageloading:CachedImage
+                    Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr2ZUO3i5IHnFTBwyP2cImFri4Hc9zb6f-WqmRI12cpCmAZ80K">
+                    <ffimageloading:CachedImage.Transformations>
+                        <fftransformations:CircleTransformation/>
+                    </ffimageloading:CachedImage.Transformations>
+                </ffimageloading:CachedImage>
+                <Label StyleId="titleLabel" 
+                       HorizontalTextAlignment="Center"
+                       Text="Amazing Title" />
+                <BoxView StyleClass="splitterBox"
+                         HorizontalOptions="FillAndExpand"/>
+                <Label StyleId="detailsLabel" 
+                       HorizontalTextAlignment="Center"
+                    Text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."/>
+            </StackLayout>
+        </Frame>
+
+        <StackLayout StyleClass="badgeButton">
+            <ContentView x:Name="titleContainer">
+                <Label x:Name="titleLabel"
+                       HorizontalTextAlignment="Center"/>
+            </ContentView>
+            <ContentView x:Name="valueContainer">
+                <Label x:Name="valueLabel"
+                       HorizontalTextAlignment="Center"/>
+            </ContentView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

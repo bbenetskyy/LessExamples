@@ -1,0 +1,31 @@
+﻿@import "Colors.less";
+
+frame {
+    margin: 15,50,15,0;
+    border-radius: 15;
+    border-color: @borderColor;
+    background-color: @primaryBackgroudColor;
+    width:200;
+}
+contentPage > stackLayout {
+    -xf-spacing: 10;
+}
+frame > stackLayout {
+    -xf-orientation: vertical;
+}
+.splitterBox {
+    height: 1;
+    background-color: @splitterColor;
+}
+#titleLabel{
+    font-size:large;
+    font-style: bold;
+    color: @titleColor;
+}
+#detailsLabel {
+    flex-wrap: nowrap;
+    max-lines: 3;
+    font-style: italic;
+    color: @detailsColor;
+}
+
