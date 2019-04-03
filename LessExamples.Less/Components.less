@@ -1,2 +1,25 @@
 ﻿@import "Colors.less";
 
+.badgeButton {
+    -xf-orientation: horizontal;
+    margin: 5;
+    -xf-spacing: 0;
+
+    & > #titleContainer {
+        background-color: black;
+
+        & > label {
+            margin: 5;
+            color: white;
+        }
+    }
+
+    & > #valueContainer {
+        background-color: green;
+
+        & > label {
+            margin: 5;
+            color: white;
+        }
+    }
+}

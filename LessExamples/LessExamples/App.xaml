@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LessExamples.App">
     <Application.Resources>
-        <StyleSheet Source="./Styles/Components.less"/>
+        <StyleSheet Source="./Styles/Components.css"/>
     </Application.Resources>
 </Application>

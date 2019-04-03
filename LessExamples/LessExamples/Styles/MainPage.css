@@ -15,7 +15,7 @@ frame > stackLayout {
   height: 1;
   background-color: Black;
 }
-#titleLabel {
+#headerLabel {
   font-size: large;
   font-style: bold;
   color: #B9CDCD;

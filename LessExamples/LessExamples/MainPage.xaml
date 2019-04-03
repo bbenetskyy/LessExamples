@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:LessExamples"
+             xmlns:local="clr-namespace:LessExamples.Components"
+             xmlns:fakeProvider="clr-namespace:LessExamples"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              x:Class="LessExamples.MainPage">
@@ -58,7 +59,7 @@
                         <fftransformations:CircleTransformation/>
                     </ffimageloading:CachedImage.Transformations>
                 </ffimageloading:CachedImage>
-                <Label StyleId="titleLabel" 
+                <Label StyleId="headerLabel" 
                        HorizontalTextAlignment="Center"
                        Text="Amazing Title" />
                 <BoxView StyleClass="splitterBox"
@@ -69,15 +70,18 @@
             </StackLayout>
         </Frame>
 
-        <StackLayout StyleClass="badgeButton">
-            <ContentView x:Name="titleContainer">
-                <Label x:Name="titleLabel"
-                       HorizontalTextAlignment="Center"/>
-            </ContentView>
-            <ContentView x:Name="valueContainer">
-                <Label x:Name="valueLabel"
-                       HorizontalTextAlignment="Center"/>
-            </ContentView>
-        </StackLayout>
+        <ListView SelectionMode="None" HasUnevenRows="True" SeparatorColor="Transparent"
+            ItemsSource="{Binding Source={x:Static fakeProvider:FakeDataProvider.FakeBadges}}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <local:BadgeButton Title="{Binding Title}"
+                                       Value="{Binding Value}"
+                                       ValueColor="{Binding ValueColor}"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
     </StackLayout>
 </ContentPage>
