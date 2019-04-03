@@ -14,7 +14,6 @@
                 <Color x:Key="titleColor">#B9CDCD</Color>
                 <Color x:Key="detailsColor">#E4F4F4</Color>
 
-
                 <Style TargetType="Frame">
                         <Setter Property="Margin" Value="15,50,15,0"/>
                         <Setter Property="CornerRadius" Value="15"/>

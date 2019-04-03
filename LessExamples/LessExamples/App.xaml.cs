@@ -10,9 +10,6 @@ namespace LessExamples
         public App()
         {
             InitializeComponent();
-#if DEBUG
-            HotReloader.Current.Start(this);
-#endif
             MainPage = new MainPage();
         }
 
