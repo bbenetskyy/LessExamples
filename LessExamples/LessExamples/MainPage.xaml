@@ -7,7 +7,7 @@
              xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              x:Class="LessExamples.MainPage">
         <ContentPage.Resources>
-            <StyleSheet Source="Styles/MainPage.css"/>
+            <!--<StyleSheet Source="Styles/MainPage.css"/>-->
         <!--<Color x:Key="splitterColor">Black</Color>
                 <Color x:Key="borderColor">#7A9999</Color>
                 <Color x:Key="primaryBackgroudColor">#516969</Color>

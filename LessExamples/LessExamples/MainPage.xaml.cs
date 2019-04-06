@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.StyleSheets;
 
 namespace LessExamples
 {
@@ -12,6 +14,25 @@ namespace LessExamples
         public MainPage()
         {
             InitializeComponent();
+
+            //if (Device.RuntimePlatform == Device.Android)
+            //{
+            //    this.Resources.Add(StyleSheet.FromAssemblyResource(
+            //        IntrospectionExtensions.GetTypeInfo(typeof(MainPage)).Assembly,
+            //        "LessExamples.Styles.MainPage.Android.css"));
+            //}
+            //else if (Device.RuntimePlatform == Device.iOS)
+            //{
+            //    this.Resources.Add(StyleSheet.FromAssemblyResource(
+            //        IntrospectionExtensions.GetTypeInfo(typeof(MainPage)).Assembly,
+            //        "LessExamples.Styles.MainPage.iOS.css"));
+            //}
+            //else
+            //{
+            //    this.Resources.Add(StyleSheet.FromAssemblyResource(
+            //        IntrospectionExtensions.GetTypeInfo(typeof(MainPage)).Assembly,
+            //        "LessExamples.Styles.MainPage.css"));
+            //}
         }
     }
 }
