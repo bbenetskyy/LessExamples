@@ -5,6 +5,9 @@ frame {
   background-color: #516969;
   width: 200;
 }
+frame {
+  background-color: green;
+}
 contentPage > stackLayout {
   -xf-spacing: 10;
 }

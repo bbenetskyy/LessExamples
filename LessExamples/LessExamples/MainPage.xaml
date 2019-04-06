@@ -7,7 +7,15 @@
              xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              x:Class="LessExamples.MainPage">
         <ContentPage.Resources>
-            <!--<StyleSheet Source="Styles/MainPage.css"/>-->
+            <StyleSheet Source="Styles/MainPage.css"/>
+        <!--<StyleSheet>
+            <StyleSheetExtension.Source>
+                <OnPlatform x:TypeArguments="x:Uri">
+                    <On Platform="Android">Styles/MainPage.Android.css</On>
+                    <On Platform="iOS">Styles/MainPage.cssiOS.css</On>
+                </OnPlatform>
+            </StyleSheetExtension.Source>
+        </StyleSheet>-->
         <!--<Color x:Key="splitterColor">Black</Color>
                 <Color x:Key="borderColor">#7A9999</Color>
                 <Color x:Key="primaryBackgroudColor">#516969</Color>
