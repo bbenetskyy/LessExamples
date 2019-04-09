@@ -57,7 +57,7 @@
                 </Style>-->
         </ContentPage.Resources>
     <StackLayout>
-        <Frame HorizontalOptions="Center"
+        <!--<Frame HorizontalOptions="Center"
                HasShadow="True">
             <StackLayout>
                 <ffimageloading:CachedImage
@@ -75,7 +75,20 @@
                        HorizontalTextAlignment="Center"
                     Text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."/>
             </StackLayout>
-        </Frame>
+        </Frame>-->
+
+        <Label Margin="15"
+               Text="This is too long header label for Main Page ever"
+               FontSize="35"
+               FontAttributes="Bold"
+               MaxLines="1"
+               LineBreakMode="TailTruncation"
+               />
+        <FlexLayout>
+            <Frame>
+                <Label/>
+            </Frame>
+        </FlexLayout>
 
         <!--<ListView SelectionMode="None" HasUnevenRows="True" SeparatorColor="Transparent"
             ItemsSource="{Binding Source={x:Static fakeProvider:FakeDataProvider.FakeBadges}}">
