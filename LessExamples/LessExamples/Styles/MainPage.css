@@ -1,12 +1,9 @@
-frame {
+.frame {
   margin: 15,50,15,0;
   border-radius: 15;
   border-color: #7A9999;
   background-color: #516969;
   width: 200;
-}
-frame {
-  background-color: green;
 }
 contentPage > stackLayout {
   -xf-spacing: 10;
