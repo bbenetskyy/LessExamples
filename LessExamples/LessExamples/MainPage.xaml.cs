@@ -29,9 +29,9 @@ namespace LessExamples
             //}
             //else
             //{
-            this.Resources.Add(StyleSheet.FromAssemblyResource(
-                IntrospectionExtensions.GetTypeInfo(typeof(MainPage)).Assembly,
-                "LessExamples.Styles.MainPage.css"));
+            //this.Resources.Add(StyleSheet.FromAssemblyResource(
+            //    IntrospectionExtensions.GetTypeInfo(typeof(MainPage)).Assembly,
+            //    "LessExamples.Styles.MainPage.css"));
             //}
         }
     }

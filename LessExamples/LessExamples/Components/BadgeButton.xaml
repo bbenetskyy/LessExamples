@@ -4,7 +4,7 @@
              StyleClass="badgeButton"
              x:Class="LessExamples.Components.BadgeButton">
     <StackLayout.Resources>
-        <StyleSheet Source="../Styles/Components.css" />
+        <!--<StyleSheet Source="../Styles/Components.css" />-->
     </StackLayout.Resources>
     <ContentView x:Name="titleContainer">
         <Label x:Name="titleLabel"

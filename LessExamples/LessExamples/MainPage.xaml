@@ -7,7 +7,7 @@
              xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              x:Class="LessExamples.MainPage">
         <ContentPage.Resources>
-            <StyleSheet Source="Styles/MainPage.css"/>
+            <StyleSheet Source="./Styles/MainPage.css"/>
         <!--<StyleSheet>
             <StyleSheetExtension.Source>
                 <OnPlatform x:TypeArguments="x:Uri">
@@ -58,7 +58,7 @@
         </ContentPage.Resources>
     <ScrollView>
         <StackLayout>
-            <!--<Frame StyleClass="frame"
+            <Frame StyleClass="frame"
                    HorizontalOptions="Center"
                    HasShadow="True">
                 <StackLayout>
@@ -76,7 +76,11 @@
                            HorizontalTextAlignment="Center"
                            Text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
                 </StackLayout>
-            </Frame>-->
+            </Frame>
+
+            <!--<Button Text="Some Default Button" />
+            <Button Text="Some Primary# Button" StyleClass="primaryButton" />
+            <Button Text="Some Really Special Button" StyleClass="specialButton" />-->
 
             <!--<ListView SelectionMode="None"
                       HasUnevenRows="True"
@@ -92,68 +96,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>-->
-
-            <Label Margin="15"
-                   Text="This is too long header label for Main Page ever"
-                   FontSize="35"
-                   FontAttributes="Bold"
-                   MaxLines="1"
-                   LineBreakMode="TailTruncation" />
-            <StackLayout BackgroundColor="Aqua">
-                <Frame BackgroundColor="Black">
-                    <Label Text="1"
-                           HorizontalTextAlignment="Center"
-                           TextColor="White"
-                           FontSize="Large" />
-                </Frame>
-                <Frame BackgroundColor="Black">
-                    <Label Text="2"
-                           HorizontalTextAlignment="Center"
-                           TextColor="White"
-                           FontSize="Large" />
-                </Frame>
-                <Frame BackgroundColor="Black">
-                    <StackLayout BackgroundColor="BlueViolet">
-                        <Label Text="3.0"
-                               FlexLayout.Grow="1"
-                               VerticalTextAlignment="Center"
-                               HorizontalTextAlignment="Center"
-                               TextColor="White"
-                               FontSize="Large" />
-                        <Button Text="3.1"
-                                FlexLayout.Basis="50"
-                                FlexLayout.Order="-1"
-                                TextColor="White"
-                                BackgroundColor="Brown"
-                                FontSize="Large" />
-                        <Button Text="3.2"
-                                FlexLayout.Basis="50"
-                                FlexLayout.Order="-1"
-                                TextColor="White"
-                                BackgroundColor="Brown"
-                                FontSize="Large" />
-                    </StackLayout>
-                </Frame>
-                <Frame BackgroundColor="Black">
-                    <Label Text="4"
-                           HorizontalTextAlignment="Center"
-                           TextColor="White"
-                           FontSize="Large" />
-                </Frame>
-                <Frame BackgroundColor="Black">
-                    <Label Text="5"
-                           HorizontalTextAlignment="Center"
-                           TextColor="White"
-                           FontSize="Large" />
-                </Frame>
-                <Frame BackgroundColor="Black">
-                    <Label Text="6"
-                           HorizontalTextAlignment="Center"
-                           TextColor="White"
-                           FontSize="Large" />
-                </Frame>
-            </StackLayout>
-
         </StackLayout>
     </ScrollView>
 </ContentPage>
