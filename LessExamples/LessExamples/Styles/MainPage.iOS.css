@@ -1,17 +1,38 @@
-frame stackLayout {
-  -xf-orientation: horizontal;
+.frame {
+  margin: 15,50,15,0;
+  border-radius: 15;
+  border-color: #7A9999;
+  background-color: #516969;
+  width: 200;
 }
-frame label {
+contentPage > stackLayout {
+  -xf-spacing: 10;
+}
+frame > stackLayout {
+  -xf-orientation: vertical;
+}
+.splitterBox {
+  height: 1;
+  background-color: Black;
+}
+#headerLabel {
   font-size: large;
+  font-style: bold;
+  color: #B9CDCD;
 }
-stackLayout label {
-  color: blueviolet;
+#detailsLabel {
+  flex-wrap: nowrap;
+  max-lines: 3;
+  font-style: italic;
+  color: #E4F4F4;
 }
-#secondStack label {
-  background-color: chartreuse;
+#detailsLabelAndroid {
+  flex-wrap: nowrap;
+  max-lines: 2;
+  color: #E4F4F4;
 }
 frame {
-  background-color: Black;
+  background-color: #516969;
   width: 150;
 }
 #detailsLabel {

@@ -105,6 +105,8 @@
                 </StackLayout>
             </Frame>-->
 
+            <!--StyleId="{x:OnPlatform Android=detailsLabelAndroid, Default=detailsLabel}"-->
+
             <!--<Button Text="Some Default Button" />
             <Button Text="Some Primary# Button" StyleClass="primaryButton" />
             <Button Text="Some Really Special Button" StyleClass="specialButton" />-->
