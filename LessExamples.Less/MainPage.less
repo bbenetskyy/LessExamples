@@ -1,38 +1,41 @@
-﻿@splitterColor: Black;
-@borderColor: #7A9999;
-@primaryBackgroundColor: #516969;
-@titleColor: #B9CDCD;
-@detailsColor: #E4F4F4;
+﻿// @splitterColor: Black;
+// @borderColor: #7A9999;
+// @primaryBackgroundColor: #516969;
+// @titleColor: #B9CDCD;
+// @detailsColor: #E4F4F4;
 
 
-.frame {
-    margin: 15,50,15,0;
-    border-radius: 15;
-    border-color: @borderColor;
-    background-color: @primaryBackgroundColor;
-    width:200;
-}
-contentPage > stackLayout {
-    -xf-spacing: 10;
-}
-frame > stackLayout {
-    -xf-orientation: vertical;
-}
-.splitterBox {
-    height: 1;
-    background-color: @splitterColor;
-}
-#headerLabel {
-    font-size: large;
-    font-style: bold;
-    color: @titleColor;
-}
-#detailsLabel {
-    flex-wrap: nowrap;
-    max-lines: 3;
-    font-style: italic;
-    color: @detailsColor;
-}
+
+// .frame {
+//     margin: 15,50,15,0;
+//     border-radius: 15;
+//     border-color: @borderColor;
+//     background-color: @primaryBackgroundColor;
+//     width:200;
+// }
+// contentPage > stackLayout {
+//     -xf-spacing: 10;
+// }
+// frame > stackLayout {
+//     -xf-orientation: vertical;
+// }
+// .splitterBox {
+//     height: 1;
+//     background-color: @splitterColor;
+// }
+// #headerLabel {
+//     font-size: large;
+//     font-style: bold;
+//     color: @titleColor;
+// }
+// #detailsLabel {
+//     flex-wrap: nowrap;
+//     max-lines: 3;
+//     font-style: italic;
+//     color: @detailsColor;
+// }
+
+
 
 // @import "Colors.less";
 
@@ -43,3 +46,40 @@ frame > stackLayout {
 //     font-size: 28;
 //     opacity: 1;
 // }
+
+
+
+
+// frame>stackLayout {
+//     -xf-orientation: horizontal;
+// }
+
+// frame>label{
+//     font-size: large;
+// }
+
+// stackLayout>label {
+//     color: blueviolet;
+// }
+
+// #secondStack>label {
+//     background-color: chartreuse;
+// }
+
+
+
+frame stackLayout {
+    -xf-orientation: horizontal;
+}
+
+frame label{
+    font-size: large;
+}
+
+stackLayout label {
+    color: blueviolet;
+}
+
+#secondStack label {
+    background-color: chartreuse;
+}

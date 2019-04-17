@@ -1,13 +1,13 @@
-frame stackLayout {
+frame > stackLayout {
   -xf-orientation: horizontal;
 }
-frame label {
+frame > label {
   font-size: large;
 }
-stackLayout label {
+stackLayout > label {
   color: blueviolet;
 }
-#secondStack label {
+#secondStack > label {
   background-color: chartreuse;
 }
 frame {
